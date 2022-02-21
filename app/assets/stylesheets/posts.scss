@@ -1,3 +1,30 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.post-container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 3px 3px 5px 2px #00000080; 
+    box-shadow: 3px 3px 5px 2px #00000080;
+    margin-bottom: 15px;
+    width: 30vw;
+    min-height: 100px;
+    border-radius: 10px;
+    .post-username{
+        font-size: 25px;
+        color: rgb(64, 91, 240);
+    }
+    .post-options{
+        margin-top: 5px;
+        .post-option{
+            text-decoration: none;
+            color: black;
+            background-color: lightblue;
+            padding: 5px;
+            border-radius: 5px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+
+nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(235, 225, 225);
+}
+.nav-left{
+    font-size: 25px;
+}
+.nav-right{
+    display: flex;
+}
+.nav-option{
+    font-size: 18px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    background-color: lightblue;
+    border-radius: 5px;
+}

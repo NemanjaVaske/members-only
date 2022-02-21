@@ -11,18 +11,21 @@
   </head>
 
   <body>
-  <p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
-       <nav>
-      <%= link_to "Home", root_path %>
-      <% if user_signed_in? %>
-        <%= link_to "New Post", new_post_path, class: "nav-button inverted" %>
-        <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "nav-button" %>
-      <% else %>
-        <%= link_to "Sign In", new_user_session_path, class: "nav-button" %>
-        <%= link_to "Sign Up", new_user_registration_path, class: "nav-button" %>
-      <% end %>
-    </nav>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <nav>
+      <div class="nav-left">Members only</div>
+      <div class="nav-right">
+      <%= link_to "Home", root_path ,class: "nav-option"%>
+        <% if user_signed_in? %>
+          <%= link_to "New Post", new_post_path, class: "nav-option" %>
+          <%= link_to "Log Out", destroy_user_session_path, method: :delete, class: "nav-option" %>
+        <% else %>
+          <%= link_to "Sign In", new_user_session_path, class: "nav-option" %>
+          <%= link_to "Sign Up", new_user_registration_path,class: "nav-option" %>
+        <% end %>
+      </nav>
+      </div>
     <%= yield %>
   </body>
 </html>
